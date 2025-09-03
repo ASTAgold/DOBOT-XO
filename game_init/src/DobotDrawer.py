@@ -58,7 +58,7 @@ def main():
                 
                 if command == "MOVETO":
                     # Use JUMP mode for pen-up moves. The Z value from the file is used.
-                    lastIndex = dType.SetPTPCmd(api, dType.PTPMode.PTPJUMPXYZMode, x, y, z, 0, isQueued=1)[0]
+                        
                 elif command == "LINETO":
                     # Use linear move for drawing.
                     lastIndex = dType.SetPTPCmd(api, dType.PTPMode.PTPMOVLXYZMode, x, y, z, 0, isQueued=1)[0]
